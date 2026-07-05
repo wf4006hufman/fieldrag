@@ -1,0 +1,21 @@
+# secrets / local env
+.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# large binary — download per-environment (see GUIDE.md STEP 8)
+cloud-sql-proxy
+
+# personal handoff notes — NOT for the public portfolio repo
+HANDOFF.md
+
+# stray eval stdout dumps
+app.eval.*.stdout
+
+# proprietary vendor docs — not redistributable in a public repo.
+# These were part of the local eval corpus; see corpus/README.md.
+corpus/dragen_v4_5_document.pdf
+corpus/illumina_connected_insights_all_sections_combined.pdf

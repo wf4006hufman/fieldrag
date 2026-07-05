@@ -1,0 +1,13 @@
+# Core (Day 1)
+google-genai>=0.3.0
+fastapi>=0.110
+uvicorn[standard]>=0.29
+psycopg2-binary>=2.9
+pgvector>=0.2.5
+python-dotenv>=1.0
+pypdf>=4.0            # optional: PDF ingestion
+
+# Agent + MCP (Day 2 / optional)
+langgraph>=0.2.0
+langchain-google-vertexai>=2.0.0
+mcp>=1.0.0

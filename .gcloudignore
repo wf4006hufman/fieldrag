@@ -1,0 +1,11 @@
+.gcloudignore
+.git
+.agents
+.codex
+.env
+.venv/
+__pycache__/
+*.pyc
+eval/report.json
+app.eval.*.stdout
+cloud-sql-proxy

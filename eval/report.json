@@ -1,0 +1,68 @@
+{
+  "n": 10,
+  "retrieval_hit@k": 1.0,
+  "keyword_recall": 0.692,
+  "groundedness_mean": 5.0,
+  "rows": [
+    {
+      "q": "How to create cram with bam?",
+      "hit": 1,
+      "kw_recall": 0.5,
+      "ground": 5
+    },
+    {
+      "q": "Why does a high duplicate rate matter?",
+      "hit": 1,
+      "kw_recall": 0.25,
+      "ground": 5
+    },
+    {
+      "q": "How to create nextflow pipeline and deploy to GCP and AWS?",
+      "hit": 1,
+      "kw_recall": 1.0,
+      "ground": 5
+    },
+    {
+      "q": "How to use nextflow pipeline that is alreay deployed in GCP and AWS?",
+      "hit": 1,
+      "kw_recall": 1.0,
+      "ground": 5
+    },
+    {
+      "q": "How to create nf-core pipeline and deploy to GCP and AWS?",
+      "hit": 1,
+      "kw_recall": 1.0,
+      "ground": 5
+    },
+    {
+      "q": "How to use nf-core pipeline that is already deployed in GCP and AWS?",
+      "hit": 1,
+      "kw_recall": 0.0,
+      "ground": 5
+    },
+    {
+      "q": "How to run DRAGEN WGS Germline in DRAGEN server?",
+      "hit": 1,
+      "kw_recall": 1.0,
+      "ground": 5
+    },
+    {
+      "q": "How to run DRAGEN WGS Somatic in DRAGEN server?",
+      "hit": 1,
+      "kw_recall": 1.0,
+      "ground": 5
+    },
+    {
+      "q": "What are the output from 5base data using DRAGEN analysis?",
+      "hit": 1,
+      "kw_recall": 0.67,
+      "ground": 5
+    },
+    {
+      "q": "How to filter records in specific condition from vcf file using bcftools?",
+      "hit": 1,
+      "kw_recall": 0.5,
+      "ground": 5
+    }
+  ]
+}

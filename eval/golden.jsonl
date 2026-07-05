@@ -1,0 +1,10 @@
+{"question": "How to create cram with bam?", "expect_source": "samtools(1) manual page.pdf", "expect_keywords": ["samtools", "option", "bam", "cram"]}
+{"question": "Why does a high duplicate rate matter?", "expect_source": "NGS_duplication_rate.md", "expect_keywords": ["complexity", "depth", "PCR", "Optical"]}
+{"question": "How to create nextflow pipeline and deploy to GCP and AWS?", "expect_source": "nextflow_document.pdf", "expect_keywords": ["AWS", "GCP"]}
+{"question": "How to use nextflow pipeline that is alreay deployed in GCP and AWS?", "expect_source": "nextflow_document.pdf", "expect_keywords": ["AWS", "GCP"]}
+{"question": "How to create nf-core pipeline and deploy to GCP and AWS?", "expect_source": "nfcore_document.pdf", "expect_keywords": ["AWS", "GCP"]}
+{"question": "How to use nf-core pipeline that is already deployed in GCP and AWS?", "expect_source": "nfcore_document.pdf", "expect_keywords": ["AWS", "GCP"]}
+{"question": "How to run DRAGEN WGS Germline in DRAGEN server?", "expect_source": "dragen_v4_5_document.pdf", "expect_keywords": ["DRAGEN", "WGS", "Germline"]}
+{"question": "How to run DRAGEN WGS Somatic in DRAGEN server?", "expect_source": "dragen_v4_5_document.pdf", "expect_keywords": ["DRAGEN", "WGS", "Somatic"]}
+{"question": "What are the output from 5base data using DRAGEN analysis?", "expect_source": "dragen_v4_5_document.pdf", "expect_keywords": ["DRAGEN", "5base", "Methylation"]}
+{"question": "How to filter records in specific condition from vcf file using bcftools?", "expect_source": "bcftools(1).pdf", "expect_keywords": ["vcf", "FILTER", "INFO", "FEILD"]}
