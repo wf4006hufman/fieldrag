@@ -2,7 +2,9 @@
 
 A grounded RAG + agent assistant for NGS / bioinformatics field support, built entirely on the **Google-native** stack: **Gemini 2.5 Pro** + `gemini-embedding-001` (via the `google-genai` SDK), **pgvector** on **Cloud SQL for PostgreSQL**, and **FastAPI** on **Cloud Run** — with a **LangGraph** ReAct agent, an optional **MCP** server, an **LLM-judge evaluation harness**, and structured JSON logs flowing to **Cloud Logging**.
 
-**▶ Live demo: https://fieldrag-417730771960.asia-northeast3.run.app**
+![FieldRAG — a grounded, cited answer with retrieval diagnostics in the browser UI](assets/fieldrag-demo.png)
+
+**Live demo:** deployed to Cloud Run at `https://fieldrag-417730771960.asia-northeast3.run.app`, currently **offline to keep cloud cost at zero** — Cloud Run scales to zero when idle, but Cloud SQL bills even while idle, so the deployment was taken down. It can be brought back live on demand (see [Cost & lifecycle](#cost--lifecycle)). The screenshot above is the running app answering a `bcftools` question with a grounded, cited answer.
 
 > A domain-authentic demonstration of a grounded RAG system: a field engineer asks a natural-language question and gets a **concise, cited answer** synthesized by Gemini strictly from a curated corpus of public NGS/bioinformatics docs — retrieved by semantic search over a vector database, with the retrieval evidence (citations, latency, retrieved chunk IDs, raw JSON) shown alongside the answer.
 
@@ -129,4 +131,4 @@ The local evaluation corpus also included Illumina **DRAGEN** (`dragen_v4_5_docu
 
 ## Cost & lifecycle
 
-The demo above is currently **live**. Cloud Run scales to zero when idle, but Cloud SQL bills even while idle — so the deployment can be taken to **zero cloud cost** (delete or pause the database) and restored on demand. See **[GUIDE.md](GUIDE.md)** STEP 15–16 for the exact take-offline and bring-back-live commands.
+The live deployment is currently **offline to keep cloud cost at zero**. Cloud Run scales to zero when idle, but Cloud SQL bills even while idle — so the deployment was taken down and can be restored on demand. See **[GUIDE.md](GUIDE.md)** STEP 15–16 for the exact take-offline and bring-back-live commands.

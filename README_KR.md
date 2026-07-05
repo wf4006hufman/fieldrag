@@ -2,7 +2,9 @@
 
 NGS / 생명정보 필드 지원을 위한 근거 기반 RAG + 에이전트 어시스턴트. 전체가 **Google 네이티브** 스택으로 구축되었습니다: `google-genai` SDK를 통한 **Gemini 2.5 Pro** + `gemini-embedding-001`, **Cloud SQL for PostgreSQL** 위의 **pgvector**, **Cloud Run** 위의 **FastAPI** — 여기에 **LangGraph** ReAct 에이전트, 선택적 **MCP** 서버, **LLM-judge 평가 하네스**, 그리고 **Cloud Logging**으로 흐르는 구조화 JSON 로그가 더해집니다.
 
-**▶ 라이브 데모: https://fieldrag-417730771960.asia-northeast3.run.app**
+![FieldRAG — 브라우저 UI에서 인용과 검색 진단이 함께 표시된 근거 기반 답변](assets/fieldrag-demo.png)
+
+**라이브 데모:** Cloud Run(`https://fieldrag-417730771960.asia-northeast3.run.app`)에 배포되었으나, **클라우드 비용을 0으로 유지하기 위해 현재 오프라인** 상태입니다 — Cloud Run은 유휴 시 0으로 스케일다운되지만 Cloud SQL은 유휴 상태에서도 과금되어 배포를 내렸습니다. 필요할 때 다시 라이브로 복구할 수 있습니다([비용 & 라이프사이클](#비용--라이프사이클) 참고). 위 스크린샷은 실행 중인 앱이 `bcftools` 질문에 출처가 인용된 근거 기반 답변을 하는 화면입니다.
 
 > 근거 기반 RAG 시스템을 도메인에 맞게 실증하는 프로젝트입니다. 필드 엔지니어가 자연어로 질문하면, Gemini가 공개 NGS/생명정보 문서 코퍼스에서만 근거를 찾아 **간결하고 출처가 인용된 답변**을 합성해 줍니다. 벡터 DB에 대한 시맨틱 검색으로 문서를 찾고, 검색 근거(인용, 지연시간, 검색된 청크 ID, raw JSON)를 답변과 함께 보여 줍니다.
 
@@ -129,4 +131,4 @@ python -m app.eval                                                # eval/report.
 
 ## 비용 & 라이프사이클
 
-위 데모는 현재 **라이브**입니다. Cloud Run은 유휴 시 0으로 스케일다운되지만 Cloud SQL은 유휴 상태에서도 과금됩니다 — 따라서 이 배포는 (데이터베이스를 삭제하거나 일시정지하여) **클라우드 비용 0**으로 내렸다가 필요할 때 다시 복구할 수 있습니다. 오프라인 전환과 재가동 명령의 정확한 내용은 **[GUIDE_KR.md](GUIDE_KR.md)** STEP 15–16을 참고하세요.
+라이브 배포는 **클라우드 비용을 0으로 유지하기 위해 현재 오프라인** 상태입니다. Cloud Run은 유휴 시 0으로 스케일다운되지만 Cloud SQL은 유휴 상태에서도 과금되어 배포를 내렸으며, 필요할 때 다시 복구할 수 있습니다. 오프라인 전환과 재가동 명령의 정확한 내용은 **[GUIDE_KR.md](GUIDE_KR.md)** STEP 15–16을 참고하세요.
